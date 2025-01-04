@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Força do CPAM-LESTE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <img class="logotipocpam" src="assets/CPAM LESTE.png" alt="Logotipo 1">
+            <h1>Mapa de Força do Cpam-Leste</h1>
+            <p id="data"></p>
+            <p>escolha a sua UPM:</p>
+            <a href="https://forms.gle/Z71EwqKHha1bft6G9">
+              <img class="logotipo" src="assets/6º BPM.png" alt="Logotipo 1">
+            </a>
+            <p>6º BPM</p>
+            
+            <a href="https://forms.gle/5uNLtfGFpE8LGX8h6">
+              <img class="logotipo" src="assets/13º BPM.png" alt="Logotipo 2">
+            </a>
+            <p>13º BPM</p>
+            
+            <a href="https://forms.gle/BEm3J9U3t6xJa1wU7">
+              <img class="logotipo" src="assets/43º BPM.png" alt="Logotipo 3">
+            </a>
+            <p>43º BPM</p>
+            
+            <a href="https://forms.gle/zfuhTwA5U1dSUBGD6">
+              <img class="logotipo" src="assets/22º BPM.png" alt="Logotipo 4">
+            </a>
+            <p>22º BPM</p>
+          </div>
+
+    <script>
+        const data = document.getElementById('data');
+        const dataAtual = new Date();
+        const dia = dataAtual.getDate();
+        const mes = dataAtual.getMonth() + 1;
+        const ano = dataAtual.getFullYear();
+
+        const meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 
+                    'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+
+        data.innerHTML = `${dia} de ${meses[mes-1]} de ${ano}`;
+    </script>
+</body>
+</html>
